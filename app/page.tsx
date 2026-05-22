@@ -3,21 +3,63 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
+import { Analytics } from "@vercel/analytics/next";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#E9EEF6] p-4 sm:p-6 overflow-y-auto">
 
       <div className="w-full max-w-7xl min-h-screen mx-auto rounded-[20px] shadow-2xl overflow-visible">
 
-        <div className="relative w-full min-h-screen">
+        <div className="relative w-full min-h-screen flex flex-col">
+        
+                  {/* HEADER AZUL */}
+          <div
+            className="
+              absolute top-0 left-0
+              w-full
+
+              h-[90px]
+              sm:h-[110px]
+
+              bg-[#06098d]
+
+              z-30
+
+              flex items-center
+              px-6 sm:px-10
+
+              shadow-[0_8px_30px_rgba(0,0,0,0.25)]
+            "
+          >
+
+            <img
+              src="/LogoFk.png"
+              alt="Logo FK"
+              className="
+                h-[55px]
+                sm:h-[75px]
+                md:h-[90px]
+
+                w-auto
+
+                object-contain
+              "
+            />
+
+            <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/10"></div>
+
+          </div>
 
           {/* BACKGROUND IMAGE */}
           <div className="absolute top-0 left-0 w-full h-full overflow-hidden"></div>
 
+          {/* DESKTOP */}
           <img
             src="/Fondo2.png"
-            alt="Background"
+            alt="Background Desktop"
             className="
+              hidden md:block
               absolute top-0 left-0
               w-full
               h-[850px]
@@ -27,25 +69,28 @@ export default function Home() {
             "
           />
 
+          {/* MOBILE */}
+          <img
+            src="/Fondocel.png"
+            alt="Background Mobile"
+            className="
+              block md:hidden
+
+              absolute top-0 left-0
+
+              w-full
+              h-full
+
+              object-cover
+              object-top
+            "
+          />
+
           {/* OVERLAY */}
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-br from-[#06098d]/40 via-transparent to-black/30" />
             <div className="absolute inset-0 backdrop-blur-[2px]" />
           </div>
-
-          {/* LOGO */}
-          <img
-            src="/LogoFk.png"
-            alt="Logo FK"
-            className="
-              fixed sm:absolute
-              top-4 left-4
-              w-[70px] sm:w-[100px] md:w-[120px]
-              object-contain
-              z-50
-              drop-shadow-[0_10px_30px_rgba(0,0,0,0.45)]
-            "
-          />
 
           {/* CONTENEDOR INFO */}
           <div
@@ -203,7 +248,7 @@ export default function Home() {
                   className="w-9 h-9 object-contain"
                 />
 
-                <h3 className="font-bold text-lg mt-2">
+                <h3 className="font-bold text-lg mt-2 text-[#14155b]">
                   WhatsApp
                 </h3>
 
@@ -239,7 +284,7 @@ export default function Home() {
                   className="w-9 h-9 object-contain"
                 />
 
-                <h3 className="font-bold mt-2">
+                <h3 className="font-bold mt-2 text-[#14155b]">
                   Enviar
                 </h3>
 
@@ -273,7 +318,7 @@ export default function Home() {
               >
                 <FaGlobe className="text-3xl text-[#3235E5] mx-auto" />
 
-                <h3 className="font-bold mt-2">
+                <h3 className="font-bold mt-2 text-[#14155b]">
                   Sitio Web
                 </h3>
 
@@ -285,7 +330,6 @@ export default function Home() {
               {/* AGREGAR CONTACTO */}
               <a
                 href="/alejandro-chavarro.vcf"
-                download
                 className="
                   md:col-span-3
                   col-span-1
@@ -432,7 +476,7 @@ export default function Home() {
 
         </div>
       </div>
-
+       <Analytics />
     </main>
   );
 }
