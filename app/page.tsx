@@ -184,7 +184,7 @@ export default function Home() {
                 <div className="w-12 h-1 bg-green-500 rounded-full mt-1 mb-3"></div>
 
                 <p className="text-base sm:text-lg text-gray-700">
-                  Gerente Comercial y de Operaciones
+                  Lider Regional zona Sur Occidente
                 </p>
 
                 <div className="flex items-center gap-2 text-gray-600 mt-1 text-xs sm:text-base">
@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href="mailto:alejandro.chavarro@papelerafk.com.co"
+                  href="mailto:alejandro.chavarro@papelerafk.com"
                   className="flex items-center gap-2 mt-2 text-blue-600 underline min-w-0"
                 >
                   <img
@@ -205,7 +205,7 @@ export default function Home() {
                   />
 
                   <span className="text-sm sm:text-base break-all">
-                    alejandro.chavarro@papelerafk.com.co
+                    alejandro.chavarro@papelerafk.com
                   </span>
                 </a>
 
@@ -259,7 +259,7 @@ export default function Home() {
 
               {/* EMAIL */}
               <a
-                href="mailto:alejandro.chavarro@papelerafk.com.co"
+                href="mailto:alejandro.chavarro@papelerafk.com"
                 className="
                   bg-white/90
                   backdrop-blur-xl
@@ -329,7 +329,7 @@ export default function Home() {
 
               {/* AGREGAR CONTACTO */}
               <a
-                href="/alejandro-chavarro.vcf"
+                href="/contacto.vcf"
                 className="
                   md:col-span-3
                   col-span-1

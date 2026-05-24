@@ -1,0 +1,24 @@
+const vcard = [
+  "BEGIN:VCARD",
+  "VERSION:3.0",
+  "N:Chavarro;Alejandro;;;",
+  "FN:Alejandro Chavarro",
+  "ORG:Papelera FK",
+  "TITLE:Lider Regional zona Sur Occidente",
+  "TEL;TYPE=CELL,VOICE:+573166497637",
+  "EMAIL;TYPE=WORK:alejandro.chavarro@papelerafk.com",
+  "URL:https://papelerafk.com.co",
+  "ADR;TYPE=WORK:;;Calle 15 # 27A - 176 Bloque 10 Bodega 7, Zona Industrial Arroyo Hondo;Yumbo;Valle del Cauca;;Colombia",
+  "ADR;TYPE=WORK:;;Carrera 4 # 18-24, San Nicolas;Cali;Valle del Cauca;;Colombia",
+  "END:VCARD",
+].join("\r\n");
+
+export function GET() {
+  return new Response(`${vcard}\r\n`, {
+    headers: {
+      "Content-Type": "text/vcard; charset=utf-8",
+      "Content-Disposition": 'inline; filename="alejandro-chavarro.vcf"',
+      "Cache-Control": "public, max-age=3600",
+    },
+  });
+}
