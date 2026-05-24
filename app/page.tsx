@@ -49,7 +49,7 @@ export default function Home() {
               "
             />
 
-            <div className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-lime-400/80 via-white/40 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>
             <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-black/12 to-transparent"></div>
 
           </div>
@@ -392,7 +392,7 @@ export default function Home() {
               </div>
 
               <div>
-                <h3 className="text-lime-400 font-bold text-sm uppercase">
+                <h3 className="text-green-500 font-bold text-sm uppercase">
                   Centro de Distribución
                 </h3>
 
@@ -420,7 +420,7 @@ export default function Home() {
               </div>
 
               <div>
-                <h3 className="text-lime-400 font-bold text-sm uppercase">
+                <h3 className="text-green-500 font-bold text-sm uppercase">
                   Punto de Venta
                 </h3>
 
