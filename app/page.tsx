@@ -19,27 +19,29 @@ export default function Home() {
               absolute top-0 left-0
               w-full
 
-              h-[90px]
-              sm:h-[110px]
+              h-[92px]
+              sm:h-[104px]
 
-              bg-[#06098d]
+              bg-gradient-to-r from-[#04066F] via-[#06098d] to-[#1827B8]
 
               z-30
 
               flex items-center
               px-6 sm:px-10
 
-              shadow-[0_8px_30px_rgba(0,0,0,0.25)]
+              shadow-[0_12px_34px_rgba(6,9,141,0.34)]
+              rounded-t-[20px]
+              border-b border-white/15
             "
           >
 
             <img
-              src="/LogoFk.png"
+              src="/papelera_fk_transparente.svg"
               alt="Logo FK"
               className="
-                h-[55px]
-                sm:h-[75px]
-                md:h-[90px]
+                h-[48px]
+                sm:h-[66px]
+                md:h-[74px]
 
                 w-auto
 
@@ -47,7 +49,8 @@ export default function Home() {
               "
             />
 
-            <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/10"></div>
+            <div className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-lime-400/80 via-white/40 to-transparent"></div>
+            <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-black/12 to-transparent"></div>
 
           </div>
 
@@ -96,7 +99,7 @@ export default function Home() {
           <div
             className="
               relative z-20
-              mt-24 sm:mt-20 md:mt-16
+              mt-32 sm:mt-36 md:mt-40
               mx-auto md:ml-auto md:mr-10 lg:mr-16
 
               w-[92%] sm:w-[600px] md:w-[760px] lg:w-[900px]
@@ -183,7 +186,11 @@ export default function Home() {
 
                 <div className="w-12 h-1 bg-green-500 rounded-full mt-1 mb-3"></div>
 
-                <p className="text-base sm:text-lg text-gray-700">
+                <p className="text-base sm:text-lg font-bold text-[#14155b]">
+                  Papelera FK S.A.S
+                </p>
+
+                <p className="text-sm sm:text-lg text-gray-700 mt-1">
                   Lider Regional zona Sur Occidente
                 </p>
 
@@ -227,9 +234,9 @@ export default function Home() {
                 href="https://wa.me/573166497637"
                 target="_blank"
                 className="
-                  bg-white/90
+                  bg-white/75
                   backdrop-blur-xl
-                  border border-white/40
+                  border border-white/35
                   rounded-[20px]
                   p-5
 
@@ -261,9 +268,9 @@ export default function Home() {
               <a
                 href="mailto:alejandro.chavarro@papelerafk.com"
                 className="
-                  bg-white/90
+                  bg-white/75
                   backdrop-blur-xl
-                  border border-white/40
+                  border border-white/35
                   rounded-[20px]
                   p-5
 
@@ -298,9 +305,9 @@ export default function Home() {
                 href="https://papelerafk.com.co"
                 target="_blank"
                 className="
-                  bg-white/90
+                  bg-white/75
                   backdrop-blur-xl
-                  border border-white/40
+                  border border-white/35
                   rounded-[20px]
                   p-5
 
